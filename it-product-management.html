@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>设备列表</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，不提供支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<script type="text/x-handlebars-template" id="amz-tpl">
+  {{>header header}}
+
+  {{>menu menu}}
+
+  {{>slider slider}}
+
+  {{>list_news list1}}
+
+  {{>gallery gallery}}
+
+  {{>list_news list2}}
+
+  {{>footer footer}}
+
+  {{>navbar navbar}}
+</script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.js"></script>
+<script src="assets/js/handlebars.min.js"></script>
+<script src="assets/js/amazeui.widgets.helper.js"></script>
+<script>
+  var $tpl = $('#amz-tpl');
+  var source = $tpl.text();
+  var template = Handlebars.compile(source);
+  var data = {
+    header: {
+      "content": {
+        "title": "服务服务管理"
+      }
+    },
+
+    menu: {
+      "options": {
+        "cols": "1"
+      },
+      "content": [
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "服务单处理"
+        },
+
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "服务单报故障"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "日常检查"
+        }
+      ],
+      "theme": "offcanvas1"
+    },
+
+  };
+  var html = template(data);
+  $tpl.before(html);
+</script>
+
+<div class="content-padding">
+  <ul class="am-nav am-nav-tabs am-nav-justify">
+    <li class="am-active"><a href="#">首页</a></li>
+    <li><a href="#">开始使用</a></li>
+    <li><a href="#">加入我们</a></li>
+  </ul>
+</div>
+<!----------------end 头部导航------------------->
+
+<div class="am-g">
+
+  <form class="am-form am-form-horizontal">
+    <div class="am-form-group am-form-icon am-form-feedback">
+      <label for="product-number" class="am-u-sm-3 am-form-label">设备条码</label>
+      <div class="am-u-sm-9">
+        <input type="email" id="product-number" class="am-form-field" placeholder="点击右边加号扫码">
+        <a href="http://www.baidu.com"><span class="am-icon-plus-square"></span></a>
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <label for="product-name" class="am-u-sm-3 am-form-label">设备名称</label>
+      <div class="am-u-sm-9">
+        <input type="text" id="product-name" placeholder="请输入设备名称">
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <label for="product-user" class="am-u-sm-3 am-form-label">使用人</label>
+      <div class="am-u-sm-9">
+        <input type="text" id="product-user" placeholder="请输入使用人">
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <label for="use-member" class="am-u-sm-3 am-form-label">使用部门</label>
+      <div class="am-u-sm-9">
+        <input type="text" id="use-member" placeholder="请输入使用部门">
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <label for="use-date" class="am-u-sm-3 am-form-label">使用日期</label>
+      <div class="am-u-sm-9">
+        <input type="date" id="use-date" placeholder="请输入使用日期">
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <label for="use-status" class="am-u-sm-3 am-form-label">使用状态</label>
+      <div class="am-u-sm-9">
+        <input type="text" id="use-status" placeholder="请输入使用状态">
+      </div>
+    </div>
+
+    <hr/>
+
+    <button class="am-btn am-btn-primary" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">点击显示侧边栏</button>
+
+    <!-- 侧边栏内容 -->
+    <div id="doc-oc-demo2" class="am-offcanvas">
+      <div class="am-offcanvas-bar">
+        <div class="am-offcanvas-content">
+          <p>
+            我不愿让你一个人 <br/>
+            承受这世界的残忍 <br/>
+            我不愿眼泪陪你到 永恒
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr/>
+
+
+    <!-- 底部固定菜单-->
+    <div class="am-list-news-ft am-topbar-fixed-bottom product-add-but">
+      <ul class="am-nav am-nav-pills am-nav-justify">
+        <!--<li class="am-active"><a href="#">首页</a></li>-->
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">新&nbsp;&nbsp;&nbsp;增</button></a></li>
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">保&nbsp;&nbsp;&nbsp;存</button></a></a></li>
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">导&nbsp;&nbsp;&nbsp;出</button></a></a></li>
+      </ul>
+    </div>
+  </form>
+
+</div>
+
+
+</body>
+</html>
