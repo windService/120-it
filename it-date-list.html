@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>设备列表</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/itCss/it-date-list.css">
+</head>
+<body>
+<script type="text/x-handlebars-template" id="amz-tpl">
+  {{>header header}}
+
+  {{>menu menu}}
+
+  {{>slider slider}}
+
+  {{>list_news list1}}
+
+  {{>gallery gallery}}
+
+  {{>list_news list2}}
+
+  {{>footer footer}}
+
+  {{>navbar navbar}}
+</script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.js"></script>
+<script src="assets/js/handlebars.min.js"></script>
+<script src="assets/js/amazeui.widgets.helper.js"></script>
+<script>
+  var $tpl = $('#amz-tpl');
+  var source = $tpl.text();
+  var template = Handlebars.compile(source);
+  var data = {
+    header: {
+      "content": {
+        "title": "日常巡检"
+      }
+    },
+
+    menu: {
+      "options": {
+        "cols": "1"
+      },
+      "content": [
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-align-center product-span-color'/>服务单处理"
+        },
+
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-bell-slash-o product-span-color'/>服务单报故障"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-search product-span-color'/>日常检查"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-money product-span-color'/> 设备资产管理"
+        }
+      ],
+      "theme": "offcanvas1"
+    },
+
+  };
+  var html = template(data);
+  $tpl.before(html);
+</script>
+
+<div class="content-padding"></div>
+<!----------------end 头部导航------------------->
+<div class="am-g">
+
+  <form class="am-form am-form-horizontal">
+    <div class="am-form-group am-form-icon am-form-feedback">
+      <div class="am-u-sm-4">
+        <div class="am-form-group" style="border: none">
+          <select style="border-style: none;"  id="doc-select-2">
+            <option value="option1">服务单号</option>
+            <option value="option2">2432</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+      <div class="am-u-sm-4">
+        <div class="am-form-group" style="border: none">
+          <select style="border-style: none;"  id="doc-select-2">
+            <option value="option1">状态</option>
+            <option value="option2">2432</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+      <div class="am-u-sm-4">
+        <div class="am-form-group" style="border: none">
+          <select style="border-style: none;"  id="doc-select-2">
+            <option value="option1">操作</option>
+            <option value="option2">2432</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">服务单号</div>
+      <div class="am-u-sm-8">3423424<span class="am-icon-plus">正常</span> </div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">巡检主题</div>
+      <div class="am-u-sm-8">啊净空法师范德萨</div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">巡检人员</div>
+      <div class="am-u-sm-8">
+        <span class="am-icon-lock"></span>
+        <span class="am-icon-unlock"></span>
+      </div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">操作人员</div>
+      <div class="am-u-sm-8">
+        wind
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <div class="am-u-sm-4">操作</div>
+      <div class="am-u-sm-8"><a style="color: blue">打 开</a>&nbsp;&nbsp; <a style="color: blue">处 理</a> &nbsp;&nbsp; <a style="color: blue">删 除</a>
+      </div>
+    </div>
+    <hr/>
+
+    <div class="am-form-group">
+      <div class="am-u-sm-4">服务单号</div>
+      <div class="am-u-sm-8">3423424<span class="am-icon-plus">不正常</span> </div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">巡检主题</div>
+      <div class="am-u-sm-8">啊净空法师范德萨</div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">巡检人员</div>
+      <div class="am-u-sm-8">
+        <span class="am-icon-lock"></span>
+        <span class="am-icon-unlock"></span>
+      </div>
+    </div>
+    <div class="am-form-group">
+      <div class="am-u-sm-4">操作人员</div>
+      <div class="am-u-sm-8">
+        wind
+      </div>
+    </div>
+
+    <div class="am-form-group">
+      <div class="am-u-sm-4">操作</div>
+      <div class="am-u-sm-8"><a style="color: blue">打 开</a>&nbsp;&nbsp; <a style="color: blue">处 理</a> &nbsp;&nbsp; <a style="color: blue">删 除</a>
+      </div>
+    </div>
+    <hr/>
+    <!-- 底部固定菜单-->
+    <div class="am-list-news-ft am-topbar-fixed-bottom product-add-but">
+      <ul class="am-nav am-nav-pills am-nav-justify">
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">新&nbsp;&nbsp;&nbsp;增</button></a></li>
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">查&nbsp;&nbsp;&nbsp;询</button></a></li>
+        <li><a href="#"><button type="button" class="am-btn am-btn-primary am-radius ">导&nbsp;&nbsp;&nbsp;出</button></a></li>
+      </ul>
+    </div>
+  </form>
+
+</div>
+
+
+</body>
+</html>

@@ -55,9 +55,14 @@ body,
     margin-bottom: 8px;
 }
 
-.implement-table{
+.edit-table{
     width: 25%;
-    text-align: right;
+    text-align: center;
+    /*border-left: #BABABA 1px solid;*/
+}
+.edit-choose{
+    width: 35%;
+    text-align: center;
     /*border-left: #BABABA 1px solid;*/
 }
 
@@ -73,15 +78,31 @@ body,
 }
 
 .implement-table-textarea{
-    border-style: none;
+    /*border-style: none;*/
     width: auto;
     height: auto;
     max-height: 235px;
 }
 
 
-.am-g{
-    width: 94%;
+[class*="am-u-"] {
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+}
+
+.edit-fllow-font{
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.am-g {
     margin: 0 auto;
-    /*border-left: none;*/
+    width: 93%;
+    margin-top: 10px;
+}
+.am-u-sm-3{
+    padding-right: 1rem;
+    text-align: right;
 }

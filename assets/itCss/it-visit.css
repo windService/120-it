@@ -43,9 +43,20 @@ body,
     display: none;
 }
 
+.result-search{
+    width: 85%;
+    margin: 0 auto;
+}
+.result-search-font{
+    color: #1a1a1a;
+}
 
 .search-padding{
     margin: 10px auto;
+}
+
+.search-more{
+    margin-top: 25px;
 }
 
 .search-button{
@@ -54,34 +65,13 @@ body,
     height: 50px;
     margin-bottom: 8px;
 }
-
-.implement-table{
-    width: 25%;
-    text-align: right;
-    /*border-left: #BABABA 1px solid;*/
+.search-code-logo{
+    width: 20px;
+    height: 20px;
+    background-image: url('../itImages/search.png');
+    background-size: cover;
 }
-
-.implement-input-sty{
-    border-style: none;
-    width: auto;
-    height: auto;
-    max-height: 35px;
-}
-
-.implement-tbody-scribe{
-    text-indent: 2em;
-}
-
-.implement-table-textarea{
-    border-style: none;
-    width: auto;
-    height: auto;
-    max-height: 235px;
-}
-
-
-.am-g{
-    width: 94%;
-    margin: 0 auto;
-    /*border-left: none;*/
+.am-form-group{
+    margin-bottom: 0em;
+    /*margin-bottom: 0px;*/
 }

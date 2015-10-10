@@ -56,32 +56,60 @@ body,
 }
 
 .implement-table{
-    width: 25%;
-    text-align: right;
-    /*border-left: #BABABA 1px solid;*/
+    width: 30%;
+    text-align: center;
+    border-left: #BABABA 1px solid;
 }
 
-.implement-input-sty{
+.product-span-color{
+    color: #0c80ba;
+    margin-right: 5px;
+}
+.am-menu-offcanvas1 .am-menu-toggle{
+    left: 5px;
+}
+[data-am-widget=tabs]{
+    margin-top: 0px;
+}
+.am-u-sm-4{
+    border-right: 1px solid lavender;
+}
+
+.am-form-group {
+    margin-bottom: 0.5rem;
+}
+
+.am-form-wid{
+    width: auto;
+    height: 10px;
+    background-color: white;
+}
+
+.course-padding{
+    height: 20px;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.dealwith-input-sty{
     border-style: none;
     width: auto;
     height: auto;
     max-height: 35px;
 }
 
-.implement-tbody-scribe{
-    text-indent: 2em;
+.service-content{
+    border: none;
 }
 
-.implement-table-textarea{
-    border-style: none;
-    width: auto;
-    height: auto;
-    max-height: 235px;
+.am-icon-check ,.response-font, .am-icon-unlock{
+    color: #006600;
 }
 
+.edit-bottom-padding{
+    margin-bottom: 50px;
+}
 
-.am-g{
-    width: 94%;
-    margin: 0 auto;
-    /*border-left: none;*/
+[class*="am-u-"] {
+    text-align: center;
 }

@@ -65,3 +65,9 @@ body,
 .product-add-but{
     margin-top: 15px;
 }
+
+.table-check{
+    width: 80%;
+    width: 250px;
+    margin: 0 auto;
+}

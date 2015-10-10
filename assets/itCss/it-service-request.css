@@ -166,4 +166,7 @@ body,
 .am-menu-offcanvas1 .am-menu-toggle{
     left: 5px;
 }
+[data-am-widget=tabs]{
+    margin-top: 0px;
+}
 

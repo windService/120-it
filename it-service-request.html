@@ -1,0 +1,261 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>设备列表</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/itCss/it-service-request.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，不提供支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<script type="text/x-handlebars-template" id="amz-tpl">
+  {{>header header}}
+
+  {{>menu menu}}
+
+  {{>slider slider}}
+
+  {{>list_news list1}}
+
+  {{>gallery gallery}}
+
+  {{>list_news list2}}
+
+  {{>footer footer}}
+
+  {{>navbar navbar}}
+</script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.js"></script>
+<script src="assets/js/handlebars.min.js"></script>
+<script src="assets/js/amazeui.widgets.helper.js"></script>
+<script>
+  var $tpl = $('#amz-tpl');
+  var source = $tpl.text();
+  var template = Handlebars.compile(source);
+  var data = {
+    header: {
+      "content": {
+        "title": "服务管理"
+      }
+    },
+    menu: {
+      "options": {
+        "cols": "1"
+      },
+      "content": [
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-align-center product-span-color'/>服务单处理"
+        },
+
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-bell-slash-o product-span-color'/>服务单报故障"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-search product-span-color'/>日常检查"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-money product-span-color'/> 设备资产管理"
+        }
+      ],
+      "theme": "offcanvas1"
+    },
+
+  };
+  var html = template(data);
+  $tpl.before(html);
+</script>
+
+<div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+  <ul class="am-tabs-nav am-cf">
+    <li class="am-active"><a href="[data-tab-panel-0]">待受理</a></li>
+    <li class=""><a href="[data-tab-panel-1]">待响应</a></li>
+    <li class=""><a href="[data-tab-panel-2]">待处理</a></li>
+    <li class=""><a href="[data-tab-panel-3]">待回访</a></li>
+  </ul>
+  <div class="am-tabs-bd">
+    <div data-tab-panel-0 class="am-tab-panel am-active">
+      <form class="am-form am-form-horizontal">
+        <div class="am-form-group am-form-icon am-form-feedback">
+          <div class="am-u-sm-3">服务单号</div>
+          <div class="am-u-sm-9">s321123213<span class="am-icon-check">未完成</span></div>
+        </div>
+        <hr/>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">实践主题</div>
+          <div class="am-u-sm-9">啊范德萨</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">联络人</div>
+          <div class="am-u-sm-9">信息部门</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">处理人</div>
+          <div class="am-u-sm-9">技术部</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">联系电话</div>
+          <div class="am-u-sm-9">15820860431</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">紧急程度</div>
+          <div class="am-u-sm-9"><a style="color: red">紧急</a></div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">请求时间</div>
+          <div class="am-u-sm-9">2015-09-09 20-20-12</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">加密状态</div>
+          <div class="am-u-sm-9">解密
+            <span class="am-icon-lock"></span>
+            <span class="am-icon-unlock"></span>
+          </div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">导出数据</div>
+          <div class="am-u-sm-9">导出数据
+            <span class="am-icon-file-o"></span>
+          </div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">操作</div>
+          <div class="am-u-sm-9">添加 删除 查找
+          </div>
+        </div>
+        <hr/>
+        <div class="am-form-group am-form-icon am-form-feedback">
+          <div class="am-u-sm-3">服务单号</div>
+          <div class="am-u-sm-9">
+            s321123213
+            <span class="am-icon-check">完成了</span>
+          </div>
+        </div>
+        <hr/>
+        <!-- 未完成-->
+        <div class="am-form-group">
+          <div class="am-u-sm-3">实践主题</div>
+          <div class="am-u-sm-9">啊范德萨</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">联络人</div>
+          <div class="am-u-sm-9">信息部门</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">处理人</div>
+          <div class="am-u-sm-9">技术部</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">联系电话</div>
+          <div class="am-u-sm-9">15820860431</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">紧急程度</div>
+          <div class="am-u-sm-9"><a style="color: red">紧急</a></div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">请求时间</div>
+          <div class="am-u-sm-9">2015-09-09 20-20-12</div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">加密状态</div>
+          <div class="am-u-sm-9">解密
+            <span class="am-icon-lock"></span>
+            <span class="am-icon-unlock"></span>
+          </div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">导出数据</div>
+          <div class="am-u-sm-9">导出数据
+            <span class="am-icon-file-o"></span>
+          </div>
+        </div>
+        <div class="am-form-group">
+          <div class="am-u-sm-3">操作</div>
+          <div class="am-u-sm-9">添加 删除 查找
+          </div>
+        </div>
+        <hr/>
+      </form>
+
+    </div>
+    <div data-tab-panel-1 class="am-tab-panel ">着啊的fda深刻理解范德萨离开房间的撒开发阿斯顿，jfk理解的撒蜂蜜柠檬的身份</div>
+    <div data-tab-panel-2 class="am-tab-panel ">去啊士大夫的      23493284392049320903294032</div>
+    <div data-tab-panel-3 class="am-tab-panel ">-------------------------------的撒范德萨倒萨--------------</div>
+  </div>
+</div>
+
+<!--<div class="am-g">-->
+
+  <!--<form class="am-form am-form-horizontal">-->
+    <!--<div class="am-form-group am-form-icon am-form-feedback">-->
+      <!--<label for="product-number" class="am-u-sm-3 am-form-label">设备条码</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="email" id="product-number" class="am-form-field" placeholder="点击右边加号扫码">-->
+        <!--<a href="http://www.baidu.com"><span class="am-icon-plus-square"></span></a>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="am-form-group">-->
+      <!--<label for="product-name" class="am-u-sm-3 am-form-label">设备名称</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="text" id="product-name" placeholder="请输入设备名称">-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="am-form-group">-->
+      <!--<label for="product-user" class="am-u-sm-3 am-form-label">使用人</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="text" id="product-user" placeholder="请输入使用人">-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="am-form-group">-->
+      <!--<label for="use-member" class="am-u-sm-3 am-form-label">使用部门</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="text" id="use-member" placeholder="请输入使用部门">-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="am-form-group">-->
+      <!--<label for="use-date" class="am-u-sm-3 am-form-label">使用日期</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="date" id="use-date" placeholder="请输入使用日期">-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="am-form-group">-->
+      <!--<label for="use-status" class="am-u-sm-3 am-form-label">使用状态</label>-->
+      <!--<div class="am-u-sm-9">-->
+        <!--<input type="text" id="use-status" placeholder="请输入使用状态">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<hr/>-->
+
+
+  <!--</form>-->
+
+</div>
+
+
+</body>
+</html>

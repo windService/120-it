@@ -13,6 +13,7 @@
   <!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/itCss/it-product-management.css">
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -50,7 +51,7 @@
   var data = {
     header: {
       "content": {
-        "title": "服务服务管理"
+        "title": "服务管理"
       }
     },
 
@@ -61,16 +62,20 @@
       "content": [
         {
           "link": "http://120.24.160.149/it/it-product-management.html",
-          "title": "服务单处理"
+          "title": "<span class='am-icon-align-center product-span-color'/>服务单处理"
         },
 
         {
           "link": "http://120.24.160.149/it/it-product-management.html",
-          "title": "服务单报故障"
+          "title": "<span class='am-icon-bell-slash-o product-span-color'/>服务单报故障"
         },
         {
           "link": "http://120.24.160.149/it/it-product-management.html",
-          "title": "日常检查"
+          "title": "<span class='am-icon-search product-span-color'/>日常检查"
+        },
+        {
+          "link": "http://120.24.160.149/it/it-product-management.html",
+          "title": "<span class='am-icon-money product-span-color'/> 设备资产管理"
         }
       ],
       "theme": "offcanvas1"
@@ -81,13 +86,32 @@
   $tpl.before(html);
 </script>
 
-<div class="content-padding">
-  <ul class="am-nav am-nav-tabs am-nav-justify">
-    <li class="am-active"><a href="#">首页</a></li>
-    <li><a href="#">开始使用</a></li>
-    <li><a href="#">加入我们</a></li>
-  </ul>
+<div class="content-padding"></div>
+
+<div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+    <ul class="am-tabs-nav am-cf">
+        <li class="am-active"><a href="[data-tab-panel-0]">青春</a></li>
+        <li class=""><a href="[data-tab-panel-1]">彩虹</a></li>
+        <li class=""><a href="[data-tab-panel-2]">歌唱</a></li>
+        <li class=""><a href="[data-tab-panel-3]"></a></li>
+    </ul>
+    <div class="am-tabs-bd">
+        <div data-tab-panel-0 class="am-tab-panel am-active">
+            【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+        <div data-tab-panel-1 class="am-tab-panel ">
+            【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+        <div data-tab-panel-2 class="am-tab-panel ">
+            【歌唱】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+    </div>
 </div>
+
+
+
+
+
 <!----------------end 头部导航------------------->
 
 <div class="am-g">
@@ -133,23 +157,6 @@
       <label for="use-status" class="am-u-sm-3 am-form-label">使用状态</label>
       <div class="am-u-sm-9">
         <input type="text" id="use-status" placeholder="请输入使用状态">
-      </div>
-    </div>
-
-    <hr/>
-
-    <button class="am-btn am-btn-primary" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">点击显示侧边栏</button>
-
-    <!-- 侧边栏内容 -->
-    <div id="doc-oc-demo2" class="am-offcanvas">
-      <div class="am-offcanvas-bar">
-        <div class="am-offcanvas-content">
-          <p>
-            我不愿让你一个人 <br/>
-            承受这世界的残忍 <br/>
-            我不愿眼泪陪你到 永恒
-          </p>
-        </div>
       </div>
     </div>
     <hr/>

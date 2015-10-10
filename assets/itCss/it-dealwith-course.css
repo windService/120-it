@@ -166,4 +166,46 @@ body,
 .am-menu-offcanvas1 .am-menu-toggle{
     left: 5px;
 }
+[data-am-widget=tabs]{
+    margin-top: 0px;
+}
 
+[class*=am-u-] {
+    /*border-right: 1px dashed lavender;*/
+    /*border-top: 1px solid lavender;*/
+    /*border-bottom: 1px solid lavender;*/
+}
+.am-u-sm-4{
+    border-right: 1px solid lavender;
+}
+
+.am-form-group {
+     margin-bottom: 0.5rem;
+}
+
+.am-form-wid{
+    width: auto;
+    height: 10px;
+    background-color: white;
+}
+
+.course-padding{
+    height: 20px;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.dealwith-input-sty{
+    border-style: none;
+    width: auto;
+    height: auto;
+    max-height: 35px;
+}
+
+.service-content{
+    border: none;
+}
+
+.am-icon-check ,.response-font, .am-icon-unlock{
+    color: #006600;
+}

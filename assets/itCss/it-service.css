@@ -56,9 +56,9 @@ body,
 }
 
 .implement-table{
-    width: 25%;
-    text-align: right;
-    /*border-left: #BABABA 1px solid;*/
+    width: 30%;
+    text-align: center;
+    border-left: #BABABA 1px solid;
 }
 
 .implement-input-sty{
@@ -78,10 +78,20 @@ body,
     height: auto;
     max-height: 235px;
 }
-
-
-.am-g{
-    width: 94%;
+.am-form{
     margin: 0 auto;
-    /*border-left: none;*/
+    width: 95%;
+}
+
+.am-radio-inline{
+    color: #006600;
+}
+
+.am-form-group{
+    margin-bottom: 0em;
+    /*margin-bottom: 0px;*/
+}
+
+.implement-table {
+    border-left: none;
 }
